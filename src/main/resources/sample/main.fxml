@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="114.0" prefWidth="701.0" style="-fx-background-color: ffa500;">
+               <children>
+                  <Label fx:id="titleLabel" layoutX="323.0" layoutY="39.0" text="Lab 1" textFill="#faf6f6">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ColorPicker fx:id="colorPicker" layoutX="302.0" layoutY="147.0" />
+            <Label layoutX="23.0" layoutY="205.0" text="CMYK" />
+            <Label layoutX="254.0" layoutY="206.0" text="XYZ" />
+            <Label layoutX="476.0" layoutY="204.0" text="Lab" />
+            <TextField fx:id="tvC" layoutX="86.0" layoutY="200.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvM" layoutX="86.0" layoutY="243.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvYcmyk" layoutX="86.0" layoutY="282.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvK" layoutX="86.0" layoutY="325.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvX" layoutX="300.0" layoutY="201.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvL" layoutX="514.0" layoutY="199.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvYxyz" layoutX="300.0" layoutY="245.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvZ" layoutX="300.0" layoutY="284.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvA" layoutX="514.0" layoutY="243.0" prefHeight="26.0" prefWidth="46.0" />
+            <TextField fx:id="tvB" layoutX="514.0" layoutY="284.0" prefHeight="26.0" prefWidth="46.0" />
+            <Slider fx:id="slC" blockIncrement="0.05" layoutX="144.0" layoutY="207.0" max="1.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slM" blockIncrement="0.05" layoutX="144.0" layoutY="249.0" max="1.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slYcmyk" blockIncrement="0.05" layoutX="144.0" layoutY="288.0" max="1.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slK" blockIncrement="0.05" layoutX="144.0" layoutY="331.0" max="1.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slX" blockIncrement="0.5" layoutX="358.0" layoutY="207.0" max="110.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slYxyz" blockIncrement="0.05" layoutX="358.0" layoutY="251.0" max="110.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slZ" blockIncrement="0.05" layoutX="358.0" layoutY="290.0" max="110.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slL" blockIncrement="0.05" layoutX="576.0" layoutY="205.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slA" blockIncrement="0.5" layoutX="576.0" layoutY="249.0" min="-100.0" prefHeight="14.0" prefWidth="87.0" />
+            <Slider fx:id="slB" blockIncrement="0.5" layoutX="576.0" layoutY="290.0" min="-100.0" prefHeight="14.0" prefWidth="87.0" />
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="11.0" layoutY="453.0" prefHeight="18.0" prefWidth="678.0" textAlignment="CENTER" textFill="#f73b1e" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
