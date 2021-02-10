@@ -16,7 +16,10 @@ public class CMYKToXYZConverter implements ColorConverter{
         if((!(inputColor instanceof CMYKColor)))
             throw new Exception("incorrect input color type");
         ColorObject rgbColor = rgbToCMYKConverter.inverseConvert(inputColor);
-        return rgbToXYZConverter.convert(rgbColor);
+        var xyzColor = rgbToXYZConverter.convert(rgbColor);
+        if(rgbColor.isCountedPrecisely())
+            xyzColor.setCountedPrecisely(true);
+        return xyzColor;
     }
 
     @Override
@@ -24,6 +27,9 @@ public class CMYKToXYZConverter implements ColorConverter{
         if((!(inputColor instanceof XYZColor)))
             throw new Exception("incorrect input color type");
         ColorObject rgbColor = rgbToXYZConverter.inverseConvert(inputColor);
-        return rgbToCMYKConverter.convert(rgbColor);
+        ColorObject cmykColor = rgbToCMYKConverter.convert(rgbColor);
+        if(rgbColor.isCountedPrecisely())
+            cmykColor.setCountedPrecisely(true);
+        return cmykColor;
     }
 }

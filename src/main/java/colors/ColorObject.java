@@ -24,6 +24,10 @@ public abstract class ColorObject {
      */
     protected boolean countedPrecisely = false;
 
+    public void setCountedPrecisely(boolean countedPrecisely) {
+        this.countedPrecisely = countedPrecisely;
+    }
+
     /**
      * Get coordinates string [ ].
      *
