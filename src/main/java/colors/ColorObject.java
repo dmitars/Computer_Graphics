@@ -74,11 +74,12 @@ public abstract class ColorObject {
      * @param index the index
      * @param value the value
      */
-    public void setCoordinate(int index, double value){
+    public void setCoordinate(int index, double value) {
+        countedPrecisely = false;
         String exactValue = getExactValue(value, index);
         if (Double.parseDouble(exactValue) != value)
             countedPrecisely = true;
-        coordinates[index] = exactValue.substring(0,Math.min(exactValue.length(),4));
+        coordinates[index] = exactValue.substring(0, Math.min(exactValue.length(), 4));
     }
 
     /**
