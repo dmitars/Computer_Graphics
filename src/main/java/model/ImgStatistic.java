@@ -36,25 +36,7 @@ public class ImgStatistic {
      */
     String compression;
 
-    /**
-     * Instantiates a new Img statistic.
-     *
-     * @param values the values
-     * @throws Exception the exception
-     */
-    public ImgStatistic(String[] values) throws Exception {
-        if (values.length < 7)
-            throw new Exception("incorrect values");
-        name = values[6];
-        width = parseSize(values[0]);
-        height = parseSize(values[1]);
-        horResolution = parseResolution(values[2]);
-        vertResolution = parseResolution(values[3]);
-        colorDepth = parseColorDepth(values[4]);
-        compression = parseCompression(values[5]);
-    }
-
-    private ImgStatistic() {
+    ImgStatistic(){
 
     }
 
@@ -64,7 +46,6 @@ public class ImgStatistic {
      * @return the string [ ]
      */
     public static String[] getIdentifiers() {
-        var fields = ImgStatistic.class.getDeclaredFields();
         return Arrays.stream(ImgStatistic.class.getDeclaredFields())
                 .sequential()
                 .map(Field::getName)
@@ -180,7 +161,7 @@ public class ImgStatistic {
      * @param horResolution the hor resolution
      */
     public void setHorResolution(String horResolution) {
-        this.horResolution = horResolution;
+        this.horResolution = parseResolution(horResolution);
     }
 
     /**
@@ -198,7 +179,7 @@ public class ImgStatistic {
      * @param vertResolution the vert resolution
      */
     public void setVertResolution(String vertResolution) {
-        this.vertResolution = vertResolution;
+        this.vertResolution = parseResolution(vertResolution);
     }
 
     /**
@@ -216,7 +197,7 @@ public class ImgStatistic {
      * @param colorDepth the color depth
      */
     public void setColorDepth(String colorDepth) {
-        this.colorDepth = colorDepth;
+        this.colorDepth = parseColorDepth(colorDepth);
     }
 
     /**
@@ -234,6 +215,10 @@ public class ImgStatistic {
      * @param compression the compression
      */
     public void setCompression(String compression) {
-        this.compression = compression;
+        this.compression = parseCompression(compression);
+    }
+
+    public static ImgStatisticBuilder newBuilder() {
+        return new ImgStatisticBuilder();
     }
 }

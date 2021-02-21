@@ -28,6 +28,16 @@ public class MainPageLoader extends Loader {
     }
 
     @Override
+    void setMinHeight() {
+        minHeight = 400;
+    }
+
+    @Override
+    void setMinWidth() {
+        minWidth = 600;
+    }
+
+    @Override
     void setControllerParameters(FXMLLoader loader) {
         ((Controller)loader.getController()).init();
     }

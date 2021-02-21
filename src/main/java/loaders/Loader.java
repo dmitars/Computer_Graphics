@@ -27,6 +27,9 @@ public abstract class Loader {
      */
     MainSystem system;
 
+    int minHeight;
+    int minWidth;
+
     /**
      * Instantiates a new Loader.
      *
@@ -36,6 +39,8 @@ public abstract class Loader {
         this.system = system;
         setPagePath();
         setTitle();
+        setMinWidth();
+        setMinHeight();
     }
 
     /**
@@ -47,6 +52,10 @@ public abstract class Loader {
      * Sets page path.
      */
     abstract void setPagePath();
+
+    abstract void setMinHeight();
+
+    abstract void setMinWidth();
 
     /**
      * Load.
@@ -94,8 +103,8 @@ public abstract class Loader {
     private void configureStage(Parent root, String title){
         Stage stage = system.getStage();
         stage.setTitle(title);
-        stage.setMinWidth(600);
-        stage.setMinHeight(400);
+        stage.setMinWidth(minWidth);
+        stage.setMinHeight(minHeight);
         stage.setScene(new Scene(root));
     }
 
