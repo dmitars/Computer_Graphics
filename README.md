@@ -1,6 +1,6 @@
 # Project name
 ----
-Lab 3
+Lab 3, variant 14
 
 Requirements
 ----
@@ -14,7 +14,11 @@ Images test
 ----
 Local Bernsen Method:
 ![bernsen](https://github.com/dmitars/Computer_Graphics/blob/lab3/doc/screens/bernsen.png)
+
+Local Niblatsk Method:
 ![niblatsk](https://github.com/dmitars/Computer_Graphics/blob/lab3/doc/screens/niblatsk.png)
+
+Adaptive method:
 ![adaptive](https://github.com/dmitars/Computer_Graphics/blob/lab3/doc/screens/Adaptive.png)
 
 Installation
