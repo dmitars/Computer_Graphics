@@ -1,0 +1,44 @@
+package loaders;
+
+import javafx.fxml.FXMLLoader;
+import controllers.Controller;
+import sample.MainSystem;
+
+/**
+ * The type Main page loader.
+ */
+public class MainPageLoader extends Loader {
+    /**
+     * Instantiates a new Main page loader.
+     *
+     * @param system the system
+     */
+    public MainPageLoader(MainSystem system) {
+        super(system);
+    }
+
+    @Override
+    void setTitle() {
+        title = "Lab 3";
+    }
+
+    @Override
+    void setPagePath() {
+        pagePath = "main.fxml";
+    }
+
+    @Override
+    void setMinHeight() {
+        minHeight = 400;
+    }
+
+    @Override
+    void setMinWidth() {
+        minWidth = 600;
+    }
+
+    @Override
+    void setControllerParameters(FXMLLoader loader) {
+        ((Controller)loader.getController()).init();
+    }
+}
