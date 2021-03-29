@@ -19,18 +19,18 @@ Time test
 
 Step by step method:
 ![stepByStep](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/stepByStep.png)
-&nbsp;
+<br>
+
 CDA Method:
 ![CDA](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/CDA.png)
-&nbsp;
-
+<br>
 Brezenhem method:
 ![brezenhem](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/Brezenhem.png)
-&nbsp;
+<br>
 
 Brezenhem method for circles:
 ![brezenhem circle](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/circle.png)
-&nbsp;
+<br>
  
 Installation
 ----
