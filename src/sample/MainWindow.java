@@ -1,12 +1,11 @@
-package com.company;
+package sample;
 
+import com.company.DrawPanel;
 import com.company.calculators.CalculatorFactory;
 import com.company.calculators.CalculatorType;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class MainWindow extends JFrame {
