@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
+/**
+ * The type Draw panel.
+ */
 public class DrawPanel extends JPanel {
 
     private int numCellsX = 30;
@@ -71,6 +74,11 @@ public class DrawPanel extends JPanel {
     }
 
 
+    /**
+     * Draw points.
+     *
+     * @param points the points
+     */
     public void drawPoints(ArrayList<Point> points){
         this.points = points;
         Pair<Integer, Integer> deltas = getMaxDxDy(points);

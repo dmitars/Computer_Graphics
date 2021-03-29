@@ -3,6 +3,9 @@ package com.company.calculators;
 import java.awt.*;
 import java.util.ArrayList;
 
+/**
+ * The type Brezenhem calculator.
+ */
 public class BrezenhemCalculator extends PointsCalculator{
     @Override
     public ArrayList<Point> calculate(int x1, int y1, int x2, int y2) {

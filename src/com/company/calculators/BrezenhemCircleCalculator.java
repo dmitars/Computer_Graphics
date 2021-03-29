@@ -4,6 +4,9 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Brezenhem circle calculator.
+ */
 public class BrezenhemCircleCalculator extends PointsCalculator {
     private int r;
 

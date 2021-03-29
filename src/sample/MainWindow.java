@@ -8,6 +8,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+/**
+ * The type Main window.
+ */
 public class MainWindow extends JFrame {
 
     private static final int WIDTH = 560;
@@ -62,6 +65,9 @@ public class MainWindow extends JFrame {
         }
     }
 
+    /**
+     * Instantiates a new Main window.
+     */
     public MainWindow() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
@@ -124,6 +130,11 @@ public class MainWindow extends JFrame {
         add(jTextField);
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         MainWindow mainWindow = new MainWindow();
         mainWindow.repaint();
