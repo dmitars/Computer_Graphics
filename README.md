@@ -20,13 +20,13 @@ Step by step method:
 ![stepByStep](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/stepByStep.png)
 
 CDA Method:
-![CDA](https://github.com/dmitars/Computer_Graphics/blob/lab3/doc/screens/CDA.png)
+![CDA](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/CDA.png)
 
 Brezenhem method:
-![brezenhem](https://github.com/dmitars/Computer_Graphics/blob/lab3/doc/screens/Brezenhem.png)
+![brezenhem](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/Brezenhem.png)
 
 Brezenhem method for circles:
-![brezenhem circle](https://github.com/dmitars/Computer_Graphics/blob/lab3/doc/screens/circle.png)
+![brezenhem circle](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/circle.png)
 
 Installation
 ----
