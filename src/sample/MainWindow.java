@@ -59,7 +59,7 @@ public class MainWindow extends JFrame {
             }
 
             drawingPanel.drawPoints(calculator.calculateWithTimeCounting(x1, y1, x2, y2));
-            timeLabel.setText("Time: " + calculator.getCountedTime() / 1000 + " ms");
+            timeLabel.setText("Time: " + calculator.getCountedTime() + " nanos");
         } catch (Exception ex) {
             errorLabel.setText("one of inputs is not int; please, repeat");
         }

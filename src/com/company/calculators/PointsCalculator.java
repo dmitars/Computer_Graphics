@@ -31,11 +31,11 @@ public abstract class PointsCalculator {
      * @param y2 the y 2
      * @return the array list
      */
-    public ArrayList<Point>calculateWithTimeCounting(int x1, int y1, int x2, int y2){
-        var start = Instant.now();
+    public ArrayList<Point> calculateWithTimeCounting(int x1, int y1, int x2, int y2) {
+        var start = System.nanoTime();
         var points = calculate(x1, y1, x2, y2);
-        var end = Instant.now();
-        countedTimeNanos = Duration.between(end,start).toNanos();
+        var end = System.nanoTime();
+        countedTimeNanos = end - start;
         return points;
     }
 
@@ -44,7 +44,8 @@ public abstract class PointsCalculator {
      *
      * @param parameter the parameter
      */
-    public void setAdditionalParameter(int parameter){}
+    public void setAdditionalParameter(int parameter) {
+    }
 
     /**
      * Gets counted time.
