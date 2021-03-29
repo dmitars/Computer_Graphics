@@ -17,23 +17,20 @@ Scale
 Time test
 ----
 
-<pre>
 Step by step method:
 ![stepByStep](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/stepByStep.png)
-<br />
-
+&nbsp;
 CDA Method:
 ![CDA](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/CDA.png)
-<br />
+&nbsp;
 
 Brezenhem method:
 ![brezenhem](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/Brezenhem.png)
-<br />
+&nbsp;
 
 Brezenhem method for circles:
 ![brezenhem circle](https://github.com/dmitars/Computer_Graphics/blob/lab4/doc/img/circle.png)
-<br />
-</pre>
+&nbsp;
  
 Installation
 ----
